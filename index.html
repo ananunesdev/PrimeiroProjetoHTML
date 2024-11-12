@@ -18,11 +18,15 @@
         </div>
 
         <div>
-            <button type="button" id="entrar" name="entrar">Entrar</button>
+            <button type="button" class="clear" id="recuperar" name="recuperar">Recuperar</button>
         </div>
 
         <div>
-            <button type="button" id="registrar" name="registrar">Registrar</button>
+            <button type="button" class="solid" id="entrar" name="entrar">Entrar</button>
+        </div>
+
+        <div>
+            <button type="button" class="outline" id="registrar" name="registrar">Registrar</button>
         </div>
     </form>
 </body>
@@ -33,6 +37,29 @@
         justify-content: center;
         align-items: center;
         height: 100vh; 
+    }
+
+    form{
+        width: 300px;
+    }
+    
+    input{
+        border: none;
+        border-radius: 5px;
+    }
+
+    input, button{
+        padding: 10px;
+        margin-bottom: 10px;
+        width: -webkit-fill-available;
+    }
+
+    button{
+        cursor: pointer;
+    }
+
+    button:active{
+        opacity: 0.8;
     }
 </style>
 </html>
